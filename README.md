@@ -13,5 +13,9 @@ Dimensionality reduction: Take whistle time series data (in the form of the freq
 
 Clustering: Take whistles (compressed or not) that seem similar to each other and bundle them together. There are plenty of clustering methods to use, but most of them require a set number of clusters for the algorithm to classify the whistles into. This is meant to be an unknown for most situations, so we had to use one of these algorithms: Gaussian Mixture (GM), Density-Based Spatial Clustering of Applications with Noise (DBSCAN).
 
+The general process was to take a dimensionality reduction algorithm to compress the whistle, then take a clustering algorithm to bundle the compressed whistles together. The algorithms were evaluated using the Normalized Mutual Information score (or NMI) from 0-1 (the higher the better); ARTWarp's NMI by reference was 0.88. The best algorithm pairs that I experimented with hit roughly 0.86, but with a speed of <15 seconds, often less than 10, compared to ARTWarp's 10 days for 1800 whistles.
+
+
 #### Second semester: ####
 
+Though the results looked promising from the first semester, there were some flaws in the algorithms and certain algorithms that I overlooked. 
