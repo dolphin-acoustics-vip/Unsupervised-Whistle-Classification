@@ -8,6 +8,7 @@ This project is part of the Dolphin Acoustics VIP, looking to explore models tha
 
 
 #### First semester (September - December 2023): ####
+Filename: "main/Ayam Unsupervised Whistle Classification S1 2023-24.ipynb"
 
 Together with Tristan, we came up with a list of algorithms that we felt would be relevant to dolphin whistle classification. These algorithms fell into two main categories: dimensionality reduction and clustering. What do these terms mean?
 
@@ -20,6 +21,7 @@ The general process was to take a whistle, stretch it to a certain size, apply d
 
 
 #### Second semester (January - May 2024): ####
+Directories: "main/Clustering Only", "main/HDBSCAN", "main/Wrapping Whistle Preprocessing"
 
 Though the results looked promising from the first semester, there were some flaws in the algorithms and certain methods that I overlooked. The methods from the first semester, specifically the dimensionality reduction algorithm in the pair and fixing the size of the whistle, would change the structure of the whistle. According to Professor Janik, the structure of the whistle could hold some important information, so it may not be the best idea to stretch the whistle. He recommended me to instead repeat the whistles, until they hit the length of the longest whistle in the dataset. More details are in the README in the "Wrapping Whistle Preprocessing" folder.
 
